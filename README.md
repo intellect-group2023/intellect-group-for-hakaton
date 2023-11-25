@@ -1,0 +1,1 @@
+# intellect-group-for-hakaton
