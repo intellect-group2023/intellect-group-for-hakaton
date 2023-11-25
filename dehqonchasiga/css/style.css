@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+header
+{
+    background: url('../img/bg-5.jpg') center/cover no-repeat;
+}
+header .header-top .card
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+header .header-top .card .logo
+{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+header .header-top .card .logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+header .header-top .card .link
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+header .header-top .card .link a
+{
+    text-decoration: none;
+    color: #22263bdd;
+    text-shadow: 2px 2px 5px rgb(206, 203, 203);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 15px;
+    transition: 1s;
+}
+header .header-top .card .link a:hover
+{
+    transform: translateY(-10px);
+}
+header .header-main .card h1
+{
+    /* color: #141820; */
+    color: #ffa;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 1200px;
+    padding-top: 160px;
+    text-align: center;
+    margin: 0 auto;
+} 
+header .header-main .card .submit
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 145px;
+    padding-bottom: 125px;
+}
+header .header-main .card .submit button
+{
+    color: cornsilk;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 21px 34px;
+    background-color: #EF8D1C;
+    border: none;
+    width: 250px;
+    border-radius: 100px;
+}
+
+/* main qismi */
+
+main 
+{
+    background: url('../img/choose.png') ;
+    background-color: #F4F4EB;
+}
+main .card
+{
+    padding: 20px;
+}
+main .card h1
+{
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main .card .wrap
+{
+    border-radius: 129px 20px 20px 20px;
+    background: #DFD7F9;
+}
+main .card .wrap .title h1 
+{
+    padding-top: 40px;
+    text-align: left;
+    padding-left: 30px;
+    color: #000;
+
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+main .card .wrap p 
+{
+    color: #333;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 20px 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+/* savdo */
+.savdo
+{
+    background: url('../img/choose.png') ;
+    background-color: #bfe0b6;
+    padding: 20px;
+}
+.savdo .card
+{
+    display: flex;
+    gap: 100px;
+    padding: 50px 30px 35px;
+    border-radius: 20px 20px 121px 121px;
+    background: #457bae40;
+    justify-content: center;
+}
+
+.savdo .card .img
+{
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.savdo .card .img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.savdo .card .info .title h1 
+{
+    color: #333;
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.savdo .card .info .item
+{
+    display: flex;
+    gap: 35px;
+    padding: 65px 0;
+}
+.savdo .card .info .item p
+{
+    color: #333;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-top: 20px;
+}
+.savdo .card .info .item .item-name p
+{
+    font-weight: 800;
+}
+
+/* qonun yangiliklari */
+.qonun
+{
+    background: url('../img/choose.png');
+    background-color: #e4a615;
+    padding: 20px;
+}
+.qonun .card
+{
+    border-radius: 100px 25px; 
+    background: #ffffff65;
+    padding: 35px 45px 65px;
+}
+.qonun .card .wrap
+{
+    
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.qonun .card .info .title
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} 
+.qonun .card .info .title h1 
+{
+    color: #333;
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.qonun .card .info .title p
+{
+    color: #333;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.qonun .card .info .text p
+{
+    color: #333;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-top: 25px;
+    width: 500px;
+}
+
+.qonun .card .info 
+{
+    background: #ece9e9ac;
+    border-radius: 20px;
+    padding: 20px;
+}
+.qonun .new h1
+{
+    color: #333;
+    font-family: Roboto;
+    font-size: 65px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-bottom: 35px;
+    text-align: center;
+}
