@@ -1,4 +1,7 @@
+import 'package:farmer/ui/widgets/categories_container.dart';
 import 'package:farmer/ui/widgets/global_text_field.dart';
+import 'package:farmer/ui/widgets/zoom_tap_button.dart';
+import 'package:farmer/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -33,6 +36,13 @@ class SaleScreen extends StatelessWidget {
         child: CustomScrollView(
           physics: const BouncingScrollPhysics(),
           slivers: [
+            const SliverToBoxAdapter(
+              child: GlobalTextField(
+                hintText: 'Search',
+                suffixIcon: Icon(Icons.camera_alt),
+                prefixIcon: Icon(Icons.search),
+              ),
+            ),
             SliverToBoxAdapter(
               child: Center(
                 child: Text(
@@ -46,14 +56,18 @@ class SaleScreen extends StatelessWidget {
               ),
             ),
             SliverToBoxAdapter(child: SizedBox(height: 15.h)),
-            const SliverToBoxAdapter(
-              child: GlobalTextField(
-                hintText: 'Search',
-                suffixIcon: Icon(Icons.camera_alt),
-                prefixIcon: Icon(Icons.search),
+            SliverToBoxAdapter(
+              child: Container(
+                height: 56.h,
+                padding: EdgeInsets.symmetric(vertical: 13.h),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(14.r),
+                ),
+                child: const Center(child: CategoriesContainer()),
               ),
             ),
-            SliverToBoxAdapter(child: SizedBox(height: 45.h)),
+            SliverToBoxAdapter(child: SizedBox(height: 25.h)),
             SliverGrid(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
@@ -62,16 +76,47 @@ class SaleScreen extends StatelessWidget {
               ),
               delegate: SliverChildBuilderDelegate(
                 (BuildContext context, int index) {
-                  return Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.r),
-                    ),
-                    child: const Stack(
-                      children: [],
+                  return ZoomTapButton(
+                    onTap: () {},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.r),
+                      ),
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 10.w,
+                          vertical: 8.h,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(13.r),
+                        ),
+                        child: Column(
+                          children: [
+                            Center(
+                              child: Text(
+                                texts[index],
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 15.sp,
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 4.h),
+                            Expanded(
+                              child: Image.asset(
+                                images[index],
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
                   );
                 },
-                childCount: 4, // Number of grid items
+                childCount: 6, // Number of grid items
               ),
             ),
             SliverToBoxAdapter(child: SizedBox(height: 19.h)),
@@ -81,3 +126,20 @@ class SaleScreen extends StatelessWidget {
     );
   }
 }
+
+List<String> images = [
+  AppImages.anjir,
+  AppImages.nok,
+  AppImages.behi,
+  AppImages.malina,
+  AppImages.shaftoli,
+  AppImages.giloz,
+];
+List<String> texts = [
+  'Anjir',
+  'Nok',
+  'Behi',
+  'Malina',
+  'Shaftoli',
+  'Gilos',
+];
