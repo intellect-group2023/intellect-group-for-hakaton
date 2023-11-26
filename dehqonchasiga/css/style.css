@@ -27,7 +27,6 @@ header .header-top .card .logo
 {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
     overflow: hidden;
     
 }
@@ -314,7 +313,6 @@ main .card .wrap p
 {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
 }
 .bottom-page .card .logo img
 {

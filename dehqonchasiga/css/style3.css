@@ -193,93 +193,113 @@ header .header-main .card .comment button
     object-fit: contain;
 }
 
-main
-{
-    background: url('../img/choose.png') center/cover no-repeat;
-    background-color: #1bd3ef;
-}
-main .card
-{
-    padding: 50px 0;
-}
-main .card .search
+/* asosiy satuv qismi */
+
+.sotuv .card .bolim 
 {
     display: flex;
-    margin: 0 auto;
+    align-items: center;
     justify-content: center;
-}
-main .card .search input
-{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.3;
-    font-family: Roboto;
+    gap: 55px;
+    padding: 20px 30px;
+    background-color: #e3d90c85;
+    width: 75%;
+    margin: 50px auto;
+    border-radius: 100px;
 
-
-    padding: 22px 571px 23px 30px;
-    border-radius: 15px;
-    background: #33333395 url(../img/SEARCH.svg);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 25px) 50%;
 }
-main .card .search input::placeholder
+.sotuv .card .bolim .item a
 {
+    text-decoration: none;
+    color: #000;
     font-family: Roboto;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.3;
-}
-main .card .title
-{
-    text-align: center;
-    font-family: Roboto;
-    font-size: 25px;
     font-weight: 500;
-    padding: 40px 0 20px; 
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 15px;
+    transition: 1s;
 }
-main .card .wrapper
+.sotuv .card .bolim .item  span
 {
-    width: 70%;
-    background-color: #ffffff80;
-    margin: 0 auto;
-    border-radius: 25px 75px 35px 12px;
-    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 1s;
+
+}
+.sotuv .card .bolim .item:hover span
+{
+    background: green;
+    transform: translateY(10px);
+}
+.sotuv .card .wrap 
+{
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 15px;
+    background: url('../img/choose.png');
+    background-color: #10c1d556;
+    border-radius: 135px 20px 140px 24px;
+    margin: 50px 0;
 }
-main .card .wrapper .info
+.sotuv .card .wrap .item
 {
-    background-color: rgba(212, 241, 48, 0.3);
-    border-radius: 45px 95px 45px 65px;
-    margin: 20px 10px;
-    padding: 20px;
+    width: calc((100% / 3) - 20px);
+    text-align: center;
 }
-main .card .wrapper .info h1
+.sotuv .card .wrap .item .img
 {
-    color: #333;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
 }
-main .card .wrapper .info p
-{
-    color: #333;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-align: justify;
-    padding: 15px 5px 20px;   
-}
-
-main .card .wrapper .info span
+.sotuv .card .wrap .item .img img
 {
     width: 100%;
-    height: 2px;
-    background: #000;
+    height: 100%;
+    object-fit: cover;
+}
+.sotuv .card .wrap .item .title h1
+{
+    text-align: left;
+
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px 0 10px 20px;
+}
+.sotuv .card .wrap .item .text a
+{
     display: flex;
+    align-items: center;
+    padding: 0 0 15px 20px;
+    gap: 12px;
+}
+.sotuv .card .wrap .item .text  p
+{
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 400;
+}
+.sotuv .card .wrap .item 
+{
+    background-color: #ffffff55;
+    padding: 20px;
+    border-radius: 45px;
+    margin: 25px 0;
+}
+a
+{
+    display: flex;
+    text-decoration: none;
 }
