@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dehqonlarga yordam</title>
+    <link rel="stylesheet" href="{% static '/static/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="card">
+                    <div class="logo"><img src="{% static 'img/header-logo.png' %}" alt=""></div>
+                    <div class="link">
+                        <a href="">Asosiy</a>
+                        <a href="malumot/">Ma'lumot</a>
+                        <a href="#">Sotuv</a>
+                        <a href="#">Yangiliklar</a>
+                        <a href="#">Ob-havo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="card">
+                    <h1>Dehqonchasiga - dehqonlarning eng yaxshi ko’makchisi</h1>
+
+                    <div class="submit">
+                        <button>Ro'yhatdan o'tish</button>
+                        <button>Hisobga kirish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="wrap">
+                    <h1>Olma kasaliliklari</h1>
+                    <div class="title">
+                        <h1>Qo'tir</h1>
+                    </div>
+                    <p>Rossiyada eng mashhur va keng tarqalgan qo'ziqorin kasalligi. Kasallikning belgilari juda xarakterlidir, ularni boshqa infektsiyalar bilan aralashtirib bo'lmaydi: barglar va mevalar zaytun dog'lari bilan o'sib chiqadi, keyin barglar parchalanadi, olma esa tosh va ta'msiz bo'ladi.Himoya tadbirlari: tushgan barglar va o'liklarni tozalash. O'simlik mavsumining boshida olma daraxtini Bordo suyuqligi yoki mis oksiklorid bilan püskürtmek, keyin Horus, Skor, Cumulus bilan 4 marta davolash.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="savdo">
+        <div class="container">
+            <div class="card">
+                
+                <div class="img">
+                    <img src="img/ko'chat.png" alt="">
+                </div>
+
+                <div class="info">
+                    <div class="title">
+                        <h1>Nok ko'chatlari sotiladi</h1>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="item-name">
+                            <p>Ko'chat navi</p>
+                            <p>Holati</p>
+                            <p>Manzil</p>
+                            <p>Narxi</p>
+                            <p>Aloqa uchun</p>
+                        </div>
+                        <div class="item-i">
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                        </div>
+                        <div class="item-info">
+                            <p>Nashvadi nok</p>
+                            <p>3 yillik ko'chatlar</p>
+                            <p>Namangan viloyati</p>
+                            <p>20 000 so'm</p>
+                            <p>+998 90 588 99 26</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="qonun">
+        <div class="container">
+            <div class="card">
+                <div class="new">
+                    <h1>Yangiliklar</h1>
+                </div>
+
+                <div class="wrap">
+
+                <div class="info">
+                    <div class="title">
+                        <p>1-modda.</p>
+                        <h1>Dehqon xo‘jaligi</h1>
+                    </div>
+                    <div class="text">
+                        <p>Dehqon xo‘jaligi oilaviy mayda tovar xo‘jaligi bo‘lib, oila a’zolarining shaxsiy mehnati asosida, meros qilib qoldiriladigan umrbod egalik qilish uchun oila boshlig‘iga berilgan yer uchastkasida qishloq xo‘jaligi mahsuloti yetishtiradi va realizatsiya qiladi.</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="title">
+                        <p>1-modda.</p>
+                        <h1>Dehqon xo‘jaligi</h1>
+                    </div>
+                    <div class="text">
+                        <p>Dehqon xo‘jaligi oilaviy mayda tovar xo‘jaligi bo‘lib, oila a’zolarining shaxsiy mehnati asosida, meros qilib qoldiriladigan umrbod egalik qilish uchun oila boshlig‘iga berilgan yer uchastkasida qishloq xo‘jaligi mahsuloti yetishtiradi va realizatsiya qiladi.</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="title">
+                        <p>1-modda.</p>
+                        <h1>Dehqon xo‘jaligi</h1>
+                    </div>
+                    {% for infos in info%}
+                        <div class="text">
+                            <p>{{ infos.text }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="info">
+                    <div class="title">
+                        <p>1-modda.</p>
+                        <h1>Dehqon xo‘jaligi</h1>
+                    </div>
+                    <div class="text">
+                        <p>Dehqon xo‘jaligi oilaviy mayda tovar xo‘jaligi bo‘lib, oila a’zolarining shaxsiy mehnati asosida, meros qilib qoldiriladigan umrbod egalik qilish uchun oila boshlig‘iga berilgan yer uchastkasida qishloq xo‘jaligi mahsuloti yetishtiradi va realizatsiya qiladi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-page">
+            <div class="container">
+                <div class="card">
+                    <div class="logo">
+                        <img src="img/header-logo.png" alt="">
+                    </div>
+                    
+                    <div class="link">
+                        <a href="">Asosiy</a>
+                        <a href="malumot/">Ma'lumot</a>
+                        <a href="#">Sotuv</a>
+                        <a href="#">Yangiliklar</a>
+                        <a href="#">Ob-havo</a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="#">
+                            <img src="img/fecabook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/twitter.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/instagram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/send.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>
