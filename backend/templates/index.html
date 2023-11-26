@@ -1,24 +1,23 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dehqonlarga yordam</title>
-    <link rel="stylesheet" href="{% static '/static/css/style.css' %}">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="header-top">
             <div class="container">
                 <div class="card">
-                    <div class="logo"><img src="{% static 'img/header-logo.png' %}" alt=""></div>
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
                     <div class="link">
-                        <a href="">Asosiy</a>
-                        <a href="malumot/">Ma'lumot</a>
-                        <a href="#">Sotuv</a>
-                        <a href="#">Yangiliklar</a>
-                        <a href="#">Ob-havo</a>
+                        <a href="index.html">Asosiy</a>
+                        <a href="malumot.html">Ma'lumot</a>
+                        <a href="sotuv.html">Sotuv</a>
+                        <a href="yangilik.html">Yangiliklar</a>
+                        <a href="havo.html">Ob-havo</a>
                     </div>
                 </div>
             </div>
@@ -129,11 +128,9 @@
                         <p>1-modda.</p>
                         <h1>Dehqon xo‘jaligi</h1>
                     </div>
-                    {% for infos in info%}
-                        <div class="text">
-                            <p>{{ infos.text }}</p>
-                        </div>
-                    {% endfor %}
+                    <div class="text">
+                        <p>Dehqon xo‘jaligi oilaviy mayda tovar xo‘jaligi bo‘lib, oila a’zolarining shaxsiy mehnati asosida, meros qilib qoldiriladigan umrbod egalik qilish uchun oila boshlig‘iga berilgan yer uchastkasida qishloq xo‘jaligi mahsuloti yetishtiradi va realizatsiya qiladi.</p>
+                    </div>
                 </div>
 
                 <div class="info">
@@ -154,15 +151,15 @@
             <div class="container">
                 <div class="card">
                     <div class="logo">
-                        <img src="img/header-logo.png" alt="">
+                        <img src="img/logo.png" alt="">
                     </div>
                     
                     <div class="link">
-                        <a href="">Asosiy</a>
-                        <a href="malumot/">Ma'lumot</a>
-                        <a href="#">Sotuv</a>
-                        <a href="#">Yangiliklar</a>
-                        <a href="#">Ob-havo</a>
+                        <a href="index.html">Asosiy</a>
+                        <a href="malumot.html">Ma'lumot</a>
+                        <a href="sotuv.html">Sotuv</a>
+                        <a href="yangilik.html">Yangiliklar</a>
+                        <a href="havo.html">Ob-havo</a>
                     </div>
 
                     <div class="icon">
