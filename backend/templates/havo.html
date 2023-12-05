@@ -1,17 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ob-havo bo'limi</title>
-    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
 </head>
+
 <body>
     <header>
         <div class="header-top">
             <div class="container">
                 <div class="card">
-                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <div class="logo"><img src="{% static 'img/logo.png' %}" alt=""></div>
                     <div class="link">
                         <a href="index.html">Asosiy</a>
                         <a href="malumot.html">Ma'lumot</a>
@@ -26,10 +29,9 @@
         <div class="header-main">
             <div class="container">
                 <div class="card">
-                    
-                    <div class="comment">
-                        <input type="text" placeholder="Bu yerga yozing  ...">
-                        <button>Qidirish</button>
+
+                    <div>
+
                     </div>
 
                 </div>
@@ -74,4 +76,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma'lumot</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
 </head>
 <body>
     <header>
         <div class="header-top">
             <div class="container">
                 <div class="card">
-                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <div class="logo"><img src="{% static 'img/logo.png' %}" alt=""></div>
                     <div class="link">
                         <a href="index.html">Asosiy</a>
                         <a href="malumot.html">Ma'lumot</a>
@@ -82,7 +83,7 @@
         <div class="container">
             <div class="card">
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
+                    <img src="{% static 'img/logo.png' %}" alt="">
                 </div>
                 <div class="link">
                     <a href="index.html">Asosiy</a>
@@ -93,16 +94,16 @@
                 </div>
                 <div class="icon">
                     <a href="#">
-                        <img src="img/fecabook.svg" alt="">
+                        <img src="{% static 'img/fecabook.svg' %}" alt="">
                     </a>
                     <a href="#">
-                        <img src="img/twitter.svg" alt="">
+                        <img src="{% static 'img/twitter.svg' %}" alt="">
                     </a>
                     <a href="#">
-                        <img src="img/instagram.svg" alt="">
+                        <img src="{% static 'img/instagram.svg' %}" alt="">
                     </a>
                     <a href="#">
-                        <img src="img/send.svg" alt="">
+                        <img src="{% static 'img/send.svg' %}" alt="">
                     </a>
                 </div>
             </div>
